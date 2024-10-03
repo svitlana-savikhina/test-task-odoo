@@ -1,0 +1,11 @@
+<odoo>
+    <template id="persons_template">
+        <t t-foreach="persons" t-as="person">
+            <div class="card">
+                <h3><t t-esc="person.full_name"/></h3>
+                <p><t t-esc="person.sex"/> - <t t-esc="person.age"/> years old</p>
+                <p>Company: <t t-esc="person.company_id.name"/></p>
+            </div>
+        </t>
+    </template>
+</odoo>
